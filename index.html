@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Code Review Registration Form</title>
+    <link rel='stylesheet' href="css/style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fantasy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+    <header>
+      <h2>THE CODE REVIEW</h2>
+    </header>
+   <div id="page-wrap">
+    <div class='banner'>
+      <h3>Signup for our newsletter</h3>
+      <p> Get the latest news on how your code is doing right in your inbox</p>
+    </div>
+    <hr class='line'>
+    <form>
+      <fieldset class='contact'>
+        <h3>Contact Information</h3>
+
+        <div class='piece'>
+          <label for="name">Full name</label>
+          <input type="text" id="name">
+        </div><br>
+        <div class='piece'>
+          <label for="email">Email Address</label>
+          <input type="email" id="email">
+        </div><br>
+        <div class='piece'>
+          <label for="phone">Phone number</label>
+          <input type="telephone" id="phone">
+        </div><br>
+        <div class='piece'>
+          <label for="street">Street Address</label>
+          <input type="text" id="street">
+        </div><br>
+        <div class='piece'>
+          <label for="city">City</label>
+          <input type="text" id="city">
+        </div><br>
+        <div class='piece'>
+          <label for="State">State</label>
+          <select name="state" id="State">
+            <option>California</option>
+            <option>Nevada</option>
+            <option>Oregon</option>
+            <option>Florida</option>
+            <option>Alabama</option>
+          </select>
+         </div><br>
+         <div class='piece'>
+          <label for="zip">Zip Code</label>
+          <input type="text" id="zip">
+         </div>
+
+      </fieldset>
+      <hr>
+      <fieldset>
+        <h3>Newsletter</h3>
+        <label for="select">Select the newsletters you would like to recieve</label><br>
+        <input type="checkbox" id="select">
+        <label for="select">Html news</label><br>
+        <input type="checkbox" id="select">
+        <label for="select">CSS news</label><br>
+        <input type="checkbox" id="select">
+        <label for="select">Javascript news</label><br>
+
+        <label for="format"> Newsletter format</label><br>
+        <input type="radio" id="format">
+        <label for="format">Html</label><br>
+        <input type="radio" id="format">
+        <label for="format"> Plain text</label><br>
+
+        <label for="other"> Other topics you'd like to hear about</label>
+        <input type="textarea" id="other">
+      </fieldset>
+      <button type="submit" id="submit">Sign Up</button>
+    </form>
+    <h6 class="indent"> Copyright The Code Review</h6>
+   </div>
+  </body>
+</html>
