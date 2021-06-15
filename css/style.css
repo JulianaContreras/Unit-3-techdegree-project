@@ -1,5 +1,6 @@
 * {
-  font-family: 'Fantasy', sans-serif;
+  font-family: 'Sofia', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,9 +24,8 @@ border: none;
 }
 
 #page-wrap {
-  align-content:center;
-  margin-left:20%;
-  margin-right:20%;
+  text-align: center;
+  margin: auto;
 }
 
 .banner {
@@ -37,76 +37,122 @@ font-size: 14px;
   color:#808080;
 }
 
-#name,
-#email,
-#phone,
-#street,
-#city,
-#zip{
+.field > input,
+.field > select {
  background-color:#d3d3d3;
   border:none;
   margin: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
-.piece {
+.field > label {
+  margin-left: 10px;
+}
+
+.field:last-child {
+  width: auto;
+}
+
+#zip {
+  width: 30%;
+  min-width: 120px;
+}
+
+#state {
+  padding:13px;
+}
+.field {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
+
+.field > label {
+  align-self: flex-start;
+}
+
+
+.newsletter {
+  text-align: left;
+}
+
+.newsletter p {
+  margin: 0;
+}
+.newsletter label {
+  margin: 15px;
+}
+
 #select,
 #format {
   margin:10px;
 }
-
 
 .line{
 border-top: double 8px;
 }
 
 button {
-  text-align: center;
-  padding:20px 100px;
+  padding:10px 20px;
   background-color: #b0e0e6;
   border:none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 24px;
   color: white;
   margin-top: 20px;
+  cursor:pointer;
+  width: 100%;
 }
+
+input::placeholder {
+  text-align: right;
+}
+
 .indent {
   text-align: center;
 }
 
-#other {
+.field > input:focus,
+.field > select:focus,
+textarea:focus {
+  outline: none;
+  background-color: #b0e0e6;
+  border: 1px solid darkslategrey;
+}
+
+textarea {
   background-color: #d3d3d3;
   border: none;
-  border-radius: 10px;
-  margin-top: 5px;
-  padding-right: 150px;
-  padding-bottom:100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
 }
+
 @media (min-width:768px) {
-  .piece {
+  .field {
     flex-direction: row;
-    display: inline-block;
-  }
-  #name{
-    padding-right: 130px;
-  }
-  #email {
-    padding-right: 100px
-  }
-  #city {
-    padding-right: 180px;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  #phone,
-  #street {
-    padding-right: 100px;
+  #page-wrap{
+    margin: auto;
+    width: 65%;
   }
 
   #zip {
-    padding-right: 0;
+    margin-right: 36%;
+    margin-left: 0;
   }
 
+
+
+  .field > label {
+    margin-top: 20px;
+  }
+
+  .field > input,
+  .field > select {
+    width: 65%;
+  }
 }
