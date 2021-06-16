@@ -54,7 +54,7 @@ font-size: 14px;
 }
 
 #zip {
-  width: 30%;
+  width: 50%;
   min-width: 120px;
 }
 
@@ -141,8 +141,8 @@ textarea {
   }
 
   #zip {
-    margin-right: 36%;
-    margin-left: 0;
+    width: 25%;
+    margin-right: 41%;
   }
 
 
